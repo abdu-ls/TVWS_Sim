@@ -1,0 +1,115 @@
+ Using device: cuda
+
+Starting Simulation | MC Trials: 2000 | Targets: Pd≥0.9, Pf≤0.01
+======================================================================
+
+[Phase II-A] SNR: -20 dB
+    Generating dataset for SNR -20 dB...
+    Generating evaluation dataset for SNR -20 dB...
+  -> Pd: 0.0112 (±0.0009), Pf: 0.0100 (±0.0005) | Thresh: 0.490 | ✗ FAIL
+
+[Phase II-A] SNR: -18 dB
+    Generating dataset for SNR -18 dB...
+    Generating evaluation dataset for SNR -18 dB...
+  -> Pd: 0.0125 (±0.0009), Pf: 0.0100 (±0.0005) | Thresh: 0.998 | ✗ FAIL
+
+[Phase II-A] SNR: -16 dB
+    Generating dataset for SNR -16 dB...
+    Generating evaluation dataset for SNR -16 dB...
+  -> Pd: 0.0161 (±0.0010), Pf: 0.0100 (±0.0005) | Thresh: 1.000 | ✗ FAIL
+
+[Phase II-A] SNR: -14 dB
+    Generating dataset for SNR -14 dB...
+    Generating evaluation dataset for SNR -14 dB...
+  -> Pd: 0.0159 (±0.0011), Pf: 0.0100 (±0.0005) | Thresh: 1.000 | ✗ FAIL
+
+[Phase II-A] SNR: -12 dB
+    Generating dataset for SNR -12 dB...
+    Generating evaluation dataset for SNR -12 dB...
+  -> Pd: 0.0222 (±0.0012), Pf: 0.0100 (±0.0005) | Thresh: 1.000 | ✗ FAIL
+
+[Phase II-A] SNR: -10 dB
+    Generating dataset for SNR -10 dB...
+    Generating evaluation dataset for SNR -10 dB...
+  -> Pd: 0.0307 (±0.0014), Pf: 0.0100 (±0.0005) | Thresh: 1.000 | ✗ FAIL
+
+[Phase II-A] SNR: -8 dB
+    Generating dataset for SNR -8 dB...
+    Generating evaluation dataset for SNR -8 dB...
+  -> Pd: 0.0792 (±0.0023), Pf: 0.0100 (±0.0005) | Thresh: 1.000 | ✗ FAIL
+
+[Phase II-A] SNR: -6 dB
+    Generating dataset for SNR -6 dB...
+    Generating evaluation dataset for SNR -6 dB...
+  -> Pd: 0.2482 (±0.0036), Pf: 0.0100 (±0.0005) | Thresh: 1.000 | ✗ FAIL
+
+[Phase II-A] SNR: -4 dB
+    Generating dataset for SNR -4 dB...
+    Generating evaluation dataset for SNR -4 dB...
+  -> Pd: 0.6493 (±0.0040), Pf: 0.0100 (±0.0005) | Thresh: 1.000 | ✗ FAIL
+
+[Phase II-A] SNR: -2 dB
+    Generating dataset for SNR -2 dB...
+    Generating evaluation dataset for SNR -2 dB...
+  -> Pd: 0.9612 (±0.0016), Pf: 0.0100 (±0.0005) | Thresh: 0.940 | ✓ PASS
+
+[Phase II-A] SNR: 0 dB
+    Generating dataset for SNR 0 dB...
+    Generating evaluation dataset for SNR 0 dB...
+  -> Pd: 0.9997 (±0.0001), Pf: 0.0100 (±0.0005) | Thresh: 0.000 | ✓ PASS
+
+[Phase II-A] SNR: 2 dB
+    Generating dataset for SNR 2 dB...
+    Early stopping at epoch 44
+    Generating evaluation dataset for SNR 2 dB...
+  -> Pd: 1.0000 (±0.0000), Pf: 0.0100 (±0.0005) | Thresh: 0.000 | ✓ PASS
+
+[Phase II-A] SNR: 4 dB
+    Generating dataset for SNR 4 dB...
+    Early stopping at epoch 31
+    Generating evaluation dataset for SNR 4 dB...
+  -> Pd: 1.0000 (±0.0000), Pf: 0.0100 (±0.0005) | Thresh: 0.000 | ✓ PASS
+
+[Phase II-A] SNR: 6 dB
+    Generating dataset for SNR 6 dB...
+    Early stopping at epoch 17
+    Generating evaluation dataset for SNR 6 dB...
+  -> Pd: 1.0000 (±0.0000), Pf: 0.0100 (±0.0005) | Thresh: 0.006 | ✓ PASS
+
+[Phase II-A] SNR: 8 dB
+    Generating dataset for SNR 8 dB...
+    Early stopping at epoch 26
+    Generating evaluation dataset for SNR 8 dB...
+  -> Pd: 1.0000 (±0.0000), Pf: 0.0100 (±0.0005) | Thresh: 0.000 | ✓ PASS
+
+[Phase II-A] SNR: 10 dB
+    Generating dataset for SNR 10 dB...
+    Generating evaluation dataset for SNR 10 dB...
+  -> Pd: 1.0000 (±0.0000), Pf: 0.0100 (±0.0005) | Thresh: 0.000 | ✓ PASS
+
+[Phase II-B] Training DQN for 500 episodes...
+
+Evaluating DQN Throughput...
+  -> SNR -20 dB: 5.68 Mbps
+  -> SNR -18 dB: 8.97 Mbps
+  -> SNR -16 dB: 14.15 Mbps
+  -> SNR -14 dB: 22.27 Mbps
+  -> SNR -12 dB: 34.86 Mbps
+  -> SNR -10 dB: 54.32 Mbps
+  -> SNR  -8 dB: 83.86 Mbps
+  -> SNR  -6 dB: 127.93 Mbps
+  -> SNR  -4 dB: 191.11 Mbps
+  -> SNR  -2 dB: 278.95 Mbps
+  -> SNR   0 dB: 394.78 Mbps
+  -> SNR   2 dB: 540.94 Mbps
+  -> SNR   4 dB: 717.01 Mbps
+  -> SNR   6 dB: 914.46 Mbps
+  -> SNR   8 dB: 1135.47 Mbps
+  -> SNR  10 dB: 1369.33 Mbps
+
+DEBUG - Pd_list: [0.011249512047978992, 0.012473118279569893, 0.016095534787123573, 0.015852850198851083, 0.022196240987759297, 0.030747356260552743, 0.07921954492089227, 0.24816315955064497, 0.6493136774918856, 0.9611800385993934, 0.9996762265051208, 1.0, 1.0, 0.9999824589099967, 1.0, 1.0]
+DEBUG - Pf_list: [0.009996760309159069, 0.00999811356347859, 0.00999255704942436, 0.009993317538424154, 0.009988498560390278, 0.009997302192931745, 0.009989496671427168, 0.009994922973167534, 0.00999610243712314, 0.00999278088073255, 0.00999866475019047, 0.009997977063006707, 0.009999215132250217, 0.009992945244241847, 0.009999920761325188, 0.009999315115403055]
+DEBUG - SNR_RANGE: [-20 -18 -16 -14 -12 -10  -8  -6  -4  -2   0   2   4   6   8  10]
+
+======================================================================
+Simulation complete! Results saved to 'ml_crn_results_fixed.png'
